@@ -1,0 +1,37 @@
+input[type="text"] {
+    outline-color: @accent-color;
+    border: 1px solid #686;
+    font-weight: 600;
+    font-size: 18px;
+    height: 34px;
+    vertical-align: bottom;
+}
+.button {
+    outline: none;
+    border: none;
+    background-color: @accent-color;
+    color: white;
+    border: 1px solid darken(@accent-color, 10%);
+    border-bottom: 2px solid darken(@accent-color, 10%);
+    padding: 4px 6px;
+    font-weight: 600;
+    font-size: 20px;
+    vertical-align: bottom;
+    &:hover {
+        margin-top: 1px;
+        border-bottom: 1px solid darken(@accent-color, 10%);
+    }
+}
+.button-small {
+    padding: 3px 5px;
+    font-size: 16px;
+}
+.twitch-button {
+    background-color: #6441A5;
+    border: 1px solid darken(#6441A5, 20%);
+    border-bottom: 2px solid darken(#6441A5, 20%);
+    &:hover {
+        margin-top: 1px;
+        border-bottom: 1px solid darken(#6441A5, 20%);
+    }
+}
