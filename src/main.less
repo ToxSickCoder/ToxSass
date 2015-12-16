@@ -1,14 +1,24 @@
 body {
-    background-color: #f6f6f6;
+    background-color: @background-color;
     color: @font-color;
     padding-top: 60px;
     padding-bottom: 40px;
 }
+.jumbotron {
+  border-bottom: 2px solid #111;
+  background-color: @jumbotron-bg;
+  color: @font-color-light;
+}
+.clearfix {
+  clear: both;
+}
+.block-center {
+  margin: 0 auto;
+}
 .hide {
     position: absolute;
     clip: rect(1px 1px 1px 1px);
-    /* IE6 & 7 */
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px); /* IE6 & 7 */
 }
 .noselect {
     -webkit-touch-callout: none;
@@ -18,93 +28,4 @@ body {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
-}
-.clearfix {
-    clear: both;
-}
-.background() {
-    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-    background-attachment: fixed;
-    background-color: #131313;
-    background-size: 20px 20px;
-    color: @font-color-light;
-}
-.jumbotron {
-    .background();
-    border-bottom: 2px solid #111;
-}
-.background {
-    .background();
-}
-.background-fs {
-    .background();
-    width: 100%;
-    height: 100vh;
-    margin-bottom: -40px;
-    margin-top: -60px;
-}
-.bg-box(@x, @y) {
-    border: 1px solid #111;
-    border-top-width: 2px;
-    border-bottom-width: 2px solid #111;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, .6);
-    padding: 25px;
-    padding-top: 20px;
-    width: @x;
-    height: @y;
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.channel-search {
-    .bg-box(340px, 160px);
-}
-.loading {
-    .bg-box(320px, 140px);
-}
-.cookie-msg {
-    border-bottom: 1px solid black;
-    width: 100%;
-    display: block;
-    position: absolute;
-    text-align: center;
-    background-color: @header-footer-bg;
-    color: @font-color-light;
-    line-height: 34px;
-    float: left;
-    padding: 10px;
-    margin-top: 0;
-    transition: .8s all;
-    z-index: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
-    p {
-        padding: 0;
-    }
-}
-.cookie-confirmed {
-    margin-top: -120px;
-}
-.card {
-    background: #060;
-    color: @font-color-light;
-    padding: 10px;
-    img {
-        border: 1px solid #333;
-        border-top-width: 2px;
-        border-bottom-width: 2px;
-        margin: 10px 0;
-    }
-    h3,
-    p {
-        padding-left: 10px;
-    }
-}
-div.error {
-    height: 20px;
-    color: #ee2222;
-    padding: 5px;
 }
