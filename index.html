@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Freek Mencke, ToxSick Productions">
+  <meta name="description" content="A beautiful LESS framework for websites and webapplications.">
+
+  <title>ToxLESS - A LESS framework</title>
+
+  <link rel="stylesheet" type="text/css" href="css/toxless.min.css">
+  <script>
+    var open = false; // keeps track if menu is open or closed
+
+    var toggleMenu = function() { // function for toggling the menu
+      var menu = document.getElementById('menu');
+      open = !open;
+      if (open) menu.className = 'open';
+      else menu.className = 'close';
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById('menu').className = 'close'; // starts with a closed menu.
+    });
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <nav class="container noselect">
+      <div>
+        <img src="//toxbot.toxsickproductions.com/img/toxsick_logo.png" alt="ToxSick Productions" class="fitted header-brand" />
+        <button class="icon-menu" onclick="toggleMenu()"></button>
+      </div>
+      <ul id="menu">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/channel">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="clearfix">
+
+    <div class="jumbotron text-center text-shadow padding-vertical-lg">
+      <h1>Tox
+        <span class="accent bold">LESS</span>
+      </h1>
+      <h2>A beautiful LESS framework for websites and webapplications.</h2>
+    </div>
+
+    <div class="container">
+
+      <div class="col-100">
+        <h1>Features</h1>
+        <h2>Grid</h2>
+      </div>
+
+      <div class="text-center">
+        <div class="col-100">
+          <div style="background-color: #999">col-100</div>
+        </div>
+        <div class="col-75-sm">
+          <div style="background-color: #999">col-75</div>
+        </div>
+        <div class="col-25-sm">
+          <div style="background-color: #999">col-25</div>
+        </div>
+        <div class="col-66-sm">
+          <div style="background-color: #999">col-66</div>
+        </div>
+        <div class="col-33-sm">
+          <div style="background-color: #999">col-33</div>
+        </div>
+        <div class="col-50-sm">
+          <div style="background-color: #999">col-50</div>
+        </div>
+        <div class="col-50-sm">
+          <div style="background-color: #999">col-50</div>
+        </div>
+      </div>
+
+      <div class="col-100">
+        <h2>Table</h2>
+
+        <div class="col-66-lg col-75-md">
+          <table class="table-flat">
+            <tr>
+              <th>Column</th>
+              <th>Column</th>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-66-lg col-75-md">
+          <table class="table-flat first-bold">
+            <tr>
+              <th>Column</th>
+              <th>Column</th>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+            <tr>
+              <td>Row</td>
+              <td>row</td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container noselect">
+      <p>&copy; ToxSick Productions -
+        <a class="glow-hover-light" href="//twitter.com/TxSkProductions ">
+          <span class="icon-twitter "></span>
+        </a>
+        </a>
+        <a class="glow-hover-light" href="//www.facebook.com/toxsickproductions ">
+          <span class="icon-facebook "></span>
+        </a>
+        <a class="glow-hover-light" href="//www.youtube.com/user/ToxSickProductionss ">
+          <span class="icon-youtube "></span>
+        </a>
+        <a class="glow-hover-light" href="//www.linkedin.com/in/freekmencke ">
+          <span class="icon-linkedin "></span>
+        </a>
+        <a class="glow-hover-light" href="//www.twitch.tv/toxsickproductions ">
+          <span class="icon-twitch "></span>
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
