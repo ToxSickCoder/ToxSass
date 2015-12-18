@@ -31,13 +31,13 @@
   <header>
     <nav class="container noselect">
       <div>
-        <img src="//toxbot.toxsickproductions.com/img/toxsick_logo.png" alt="ToxSick Productions" class="fitted header-brand" />
+        <img src="http://toxbot.toxsickproductions.com/img/toxsick_logo.png" alt="ToxSick Productions" class="fitted header-brand" />
         <button class="icon-menu" onclick="toggleMenu()"></button>
       </div>
       <ul id="menu">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/channel">About</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -84,57 +84,127 @@
 
       <div class="col-100">
         <h2>Table</h2>
+      </div>
 
-        <div class="col-66-lg col-75-md">
-          <table class="table-flat">
-            <tr>
-              <th>Column</th>
-              <th>Column</th>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-          </table>
+      <div class="col-50-sm">
+        <table class="table-flat">
+          <tr>
+            <th>Column</th>
+            <th>Column</th>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-50-sm">
+        <table class="table-flat first-bold">
+          <tr>
+            <th>Column</th>
+            <th>Column</th>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+          <tr>
+            <td>Row</td>
+            <td>row</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-100">
+        <h2>Forms</h2>
+
+        <form class="col-50-sm" onsubmit="return false;">
+          <h3>Example form 1</h3>
+          <div class="col-100">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="Freek Mencke" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="info@ToxSickProductions.com" />
+            <div class="margin-top-xs">
+              <input type="submit" class="button" />
+            </div>
+          </div>
+        </form>
+
+        <form class="col-50-sm" onsubmit="return false;">
+          <h3>Example form 2</h3>
+          <div class="col-100">
+            <div class="form-row">
+              <div class="col-25-sm no-padding">
+                <label for="name">Name:</label>
+              </div>
+              <div class="col-75-sm no-padding">
+                <input type="text" name="name" id="name" value="Freek Mencke" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-25-sm no-padding">
+                <label for="email">Email:</label>
+              </div>
+              <div class="col-75-sm no-padding">
+                <input type="email" name="email" id="email" value="info@ToxSickProductions.com" />
+              </div>
+            </div>
+            <div class="form-row text-center">
+              <input type="submit" class="button" />
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-100">
+        <h2>Buttons</h2>
+        <div class="col-100">
+          <h3>Normal</h3>
+          <button class="button button-lg">button-lg</button>
+          <button class="button">button</button>
+          <button class="button button-sm">button-sm</button>
         </div>
-
-        <div class="col-66-lg col-75-md">
-          <table class="table-flat first-bold">
-            <tr>
-              <th>Column</th>
-              <th>Column</th>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-            <tr>
-              <td>Row</td>
-              <td>row</td>
-            </tr>
-          </table>
+        <div class="col-100">
+          <h3>Dark</h3>
+          <button class="button button-dark button-lg">button-lg</button>
+          <button class="button button-dark">button</button>
+          <button class="button button-dark button-sm">button-sm</button>
         </div>
-
+        <div class="col-100">
+          <h3>Light</h3>
+          <button class="button button-light button-lg">button-lg</button>
+          <button class="button button-light">button</button>
+          <button class="button button-light button-sm">button-sm</button>
+        </div>
+        <div class="col-100">
+          <h3>Invert</h3>
+          <button class="button button-invert button-lg">button-lg</button>
+          <button class="button button-invert">button</button>
+          <button class="button button-invert button-sm">button-sm</button>
+        </div>
       </div>
 
     </div>
@@ -144,20 +214,20 @@
   <footer>
     <div class="container noselect">
       <p>&copy; ToxSick Productions -
-        <a class="glow-hover-light" href="//twitter.com/TxSkProductions ">
+        <a class="glow-hover-light" href="http://twitter.com/TxSkProductions ">
           <span class="icon-twitter "></span>
         </a>
         </a>
-        <a class="glow-hover-light" href="//www.facebook.com/toxsickproductions ">
+        <a class="glow-hover-light" href="http://www.facebook.com/toxsickproductions ">
           <span class="icon-facebook "></span>
         </a>
-        <a class="glow-hover-light" href="//www.youtube.com/user/ToxSickProductionss ">
+        <a class="glow-hover-light" href="http://www.youtube.com/user/ToxSickProductionss ">
           <span class="icon-youtube "></span>
         </a>
-        <a class="glow-hover-light" href="//www.linkedin.com/in/freekmencke ">
+        <a class="glow-hover-light" href="http://www.linkedin.com/in/freekmencke ">
           <span class="icon-linkedin "></span>
         </a>
-        <a class="glow-hover-light" href="//www.twitch.tv/toxsickproductions ">
+        <a class="glow-hover-light" href="http://www.twitch.tv/toxsickproductions ">
           <span class="icon-twitch "></span>
         </a>
       </p>

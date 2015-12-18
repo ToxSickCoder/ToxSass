@@ -8,6 +8,8 @@ Either you can grab the source files in the **src** folder and start edit the LE
 You can use the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/index.html">index.html</a>** page to see examples of what you can do with ToxLESS.
 
 ## Features
+### Variables
+Every color is based on a few main colors found in the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/src/variables.less">variables.less</a>**, especially the **@accent-color**. Try playing with the value to see what changes. The standard value is #070.
 ### Grid
 ToxLESS features a percentual grid. There are six different sizes and four different display sizes. The column sizes are *100, 75, 66, 50, 33 or 25%*. The disiplay sizes are *lg (>=1200px), md (>=992px), sm (>=768px)* and less (<768px).
 
@@ -22,3 +24,11 @@ The highest display size counts. For example *class="col-75-lg col-66-md"*. This
 
 ### Table
 For a simple but beautiful table use the *table-flat* class. See the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/index.html">index.html</a>** for an example.
+
+### Forms
+You can build forms in two ways: either with the grid system or without it. The first example in the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/index.html">index.html</a>** file doesn't use the grid while the second example does.
+
+The second example features inline form rows, but this isn't required. It just depends on how you use the grid system.
+
+### Buttons
+There are three button sizes and 4 button types you can use. The sizes are: *button-lg*, *button-sm* and normal. The types are: *dark*, *light*, *inverted* and normal.

@@ -6,7 +6,7 @@ header {
     height: 60px;
     width: 100%;
     top: 0;
-    background: @header-footer-bg;
+    background-color: @header-footer-bg;
     border-bottom: 2px solid darken(@header-footer-bg, 10%);
     nav {
         height: 60px;
@@ -28,9 +28,9 @@ header {
                 float: left;
                 text-align: center;
                 &.active a {
-                    background-color: #060;
+                    background-color: darken(@accent-color, 5%);
                     color: darken(@font-color-light, 30%);
-                    border-bottom: 2px solid #040;
+                    border-bottom: 2px solid darken(@accent-color, 12%);
                 }
                 a {
                     display: block;
@@ -42,9 +42,9 @@ header {
                         color: @font-color-light;
                     }
                     &:hover {
-                        background-color: #070;
+                        background-color: @accent-color;
                         color: @font-color-light;
-                        border-bottom: 2px solid #050;
+                        border-bottom: 2px solid darken(@accent-color, 12%);
                         text-decoration: none;
                     }
                 }
@@ -71,7 +71,7 @@ header {
             }
             ul {
               position: relative;
-                background: @header-footer-bg;
+                background-color: @header-footer-bg;
                 width: 100%;
                 z-index: 1;
                 border-bottom: 1px solid black;
