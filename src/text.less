@@ -77,3 +77,11 @@ h3 {
         color: @accent-color;
     }
 }
+.one-line {
+  overflow: hidden;
+  white-space: nowrap;
+  &:hover {
+    overflow: visible;
+    white-space: normal;
+  }
+}
