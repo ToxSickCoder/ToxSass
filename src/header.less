@@ -1,101 +1,101 @@
 header {
-    z-index: 2;
-    position: fixed;
-    display: block;
-    float: left;
+  z-index: 2;
+  position: fixed;
+  display: block;
+  float: left;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  background-color: @header-footer-bg;
+  border-bottom: 2px solid darken(@header-footer-bg, 10%);
+  nav {
     height: 60px;
-    width: 100%;
-    top: 0;
-    background-color: @header-footer-bg;
-    border-bottom: 2px solid darken(@header-footer-bg, 10%);
-    nav {
-        height: 60px;
-        .header-brand {
-            display: inline-block;
-            float: left;
-            max-height: 60px;
-            padding: 8px 15px;
-            color: @font-color-light;
-            font-size: 30px;
-            @media (max-width: 381px){
-              padding: 0 8px;
-            }
+    .header-brand {
+      display: inline-block;
+      float: left;
+      max-height: 60px;
+      padding: 8px 15px;
+      color: @font-color-light;
+      font-size: 30px;
+      @media (max-width: 381px) {
+        padding: 0 8px;
+      }
+    }
+    img.header-brand {
+      padding: 0 15px;
+      @media (max-width: 381px) {
+        padding: 0 8px;
+      }
+    }
+    ul {
+      display: block;
+      float: left;
+      li {
+        float: left;
+        text-align: center;
+        &.active a {
+          background-color: darken(@accent-color, 5%);
+          color: darken(@font-color-light, 30%);
+          border-bottom: 2px solid darken(@accent-color, 12%);
         }
-        img.header-brand {
-          padding: 0px 15px;
-          @media (max-width: 381px){
-            padding: 0 8px;
+        a {
+          display: block;
+          padding: 18px;
+          border-bottom: 2px solid transparent;
+          color: @font-color-light;
+          font-weight: normal;
+          &:visited {
+            color: @font-color-light;
+          }
+          &:hover {
+            background-color: @accent-color;
+            color: @font-color-light;
+            border-bottom: 2px solid darken(@accent-color, 12%);
+            text-decoration: none;
           }
         }
-        ul {
-            display: block;
-            float: left;
-            li {
-                float: left;
-                text-align: center;
-                &.active a {
-                    background-color: darken(@accent-color, 5%);
-                    color: darken(@font-color-light, 30%);
-                    border-bottom: 2px solid darken(@accent-color, 12%);
-                }
-                a {
-                    display: block;
-                    padding: 18px;
-                    border-bottom: 2px solid transparent;
-                    color: @font-color-light;
-                    font-weight: normal;
-                    &:visited {
-                        color: @font-color-light;
-                    }
-                    &:hover {
-                        background-color: @accent-color;
-                        color: @font-color-light;
-                        border-bottom: 2px solid darken(@accent-color, 12%);
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-        button {
-            display: none;
-            float: right;
-            height: 60px;
-            width: 60px;
-            background: none;
-            color: white;
-            font-size: 24px;
-            outline: none;
-            border: 0;
-        }
-        @media (max-width: 767px) {
-            div {
-                display: block;
-                position: relative;
-                height: 60px;
-                z-index: 2;
-                background-color: @header-footer-bg;
-            }
-            ul {
-              position: relative;
-                background-color: @header-footer-bg;
-                width: 100%;
-                z-index: 1;
-                border-bottom: 1px solid black;
-                li {
-                    width: 100%;
-                }
-                &.close {
-                    margin-top: -180px; // 60px * header items
-                    transition: .8s all;
-                }
-                &.open {
-                    margin-top: 0;
-                    transition: .8s all;
-                }
-            }
-            button {
-                display: inline-block;
-            }
-        }
+      }
     }
+    button {
+      display: none;
+      float: right;
+      height: 60px;
+      width: 60px;
+      background: none;
+      color: white;
+      font-size: 24px;
+      outline: none;
+      border: 0;
+    }
+    @media (max-width: 767px) {
+      div {
+        display: block;
+        position: relative;
+        height: 60px;
+        z-index: 2;
+        background-color: @header-footer-bg;
+      }
+      ul {
+        position: relative;
+        background-color: @header-footer-bg;
+        width: 100%;
+        z-index: 1;
+        border-bottom: 1px solid black;
+        li {
+          width: 100%;
+        }
+        &.close {
+          margin-top: -180px; // 60px * header items
+          transition: 0.8s all;
+        }
+        &.open {
+          margin-top: 0;
+          transition: 0.8s all;
+        }
+      }
+      button {
+        display: inline-block;
+      }
+    }
+  }
 }
