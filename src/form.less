@@ -23,11 +23,11 @@ form {
 .button {
   padding: 4px 6px;
   background-color: @accent-color;
-  color: white;
+  color: @font-color-light;
   font-weight: 600;
   font-size: 20px;
   outline: none;
-  border: 1px solid darken(@accent-color, 12%);
+  border: 0;
   border-bottom: 2px solid darken(@accent-color, 12%);
   vertical-align: bottom;
   &:hover {
@@ -44,24 +44,70 @@ form {
 }
 .button-dark {
   background-color: darken(@accent-color, 7%);
-  border: 1px solid darken(darken(@accent-color, 7%), 12%);
   border-bottom: 2px solid darken(darken(@accent-color, 7%), 12%);
 }
 .button-light {
   background-color: lighten(@accent-color, 7%);
-  border: 1px solid darken(lighten(@accent-color, 7%), 12%);
   border-bottom: 2px solid darken(lighten(@accent-color, 7%), 12%);
 }
 .button-invert {
   background-color: spin(@accent-color, 180);
-  border: 1px solid darken(spin(@accent-color, 180), 12%);
   border-bottom: 2px solid darken(spin(@accent-color, 180), 12%);
 }
 .button-icon {
   text-align: center;
   padding: 4px;
+  padding-top: 5px;
   font-size: 22px;
   line-height: 26px;
   vertical-align: middle;
   width: 38px;
+}
+// Toggle is inspired from: http://callmenick.com/post/css-toggle-switch-examples
+.toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.toggle + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 60px;
+}
+input.toggle + label:before,
+input.toggle + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.toggle + label:before {
+  right: 1px;
+  background-color: #eee;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+input.toggle + label:after {
+  width: 29px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.toggle:checked + label:before {
+  background-color: @accent-color;
+}
+input.toggle:checked + label:after {
+  margin-left: 30px;
 }

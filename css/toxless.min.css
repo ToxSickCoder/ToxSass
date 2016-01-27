@@ -306,7 +306,7 @@ h1,
 h2,
 h3,
 p {
-  padding-bottom: 5px;
+  padding-bottom: 8px;
 }
 a {
   cursor: pointer;
@@ -385,6 +385,13 @@ h3 {
 .one-line:hover {
   overflow: visible;
   white-space: normal;
+}
+dt {
+  font-weight: 600;
+}
+dd {
+  padding-left: 12px;
+  padding-bottom: 5px;
 }
 .container {
   display: block;
@@ -824,11 +831,11 @@ form div.form-row {
 .button {
   padding: 4px 6px;
   background-color: #007700;
-  color: white;
+  color: #fafafa;
   font-weight: 600;
   font-size: 20px;
   outline: none;
-  border: 1px solid #003a00;
+  border: 0;
   border-bottom: 2px solid #003a00;
   vertical-align: bottom;
 }
@@ -845,24 +852,69 @@ form div.form-row {
 }
 .button-dark {
   background-color: #005300;
-  border: 1px solid #001600;
   border-bottom: 2px solid #001600;
 }
 .button-light {
   background-color: #009b00;
-  border: 1px solid #005e00;
   border-bottom: 2px solid #005e00;
 }
 .button-invert {
   background-color: #770077;
-  border: 1px solid #3a003a;
   border-bottom: 2px solid #3a003a;
 }
 .button-icon {
   text-align: center;
   padding: 4px;
+  padding-top: 5px;
   font-size: 22px;
   line-height: 26px;
   vertical-align: middle;
   width: 38px;
+}
+.toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+input.toggle + label {
+  padding: 2px;
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 60px;
+}
+input.toggle + label:before,
+input.toggle + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+input.toggle + label:before {
+  right: 1px;
+  background-color: #eee;
+  border-radius: 30px;
+  transition: background 0.4s;
+}
+input.toggle + label:after {
+  width: 29px;
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: margin 0.4s;
+}
+input.toggle:checked + label:before {
+  background-color: #007700;
+}
+input.toggle:checked + label:after {
+  margin-left: 30px;
 }
