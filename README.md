@@ -9,18 +9,20 @@ You can use the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/ma
 
 ## Features
 ### Variables
-Every color is based on a few main colors found in the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/src/variables.less">variables.less</a>**, especially the **@accent-color**. Try playing with the value to see what changes. The standard value is #070.
+ToxLESS works with variables to easily changes colors, grid sizes or more. You can find and change the variables in the found in the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/src/variables.less">variables.less</a>** file.
+
+Every color is based on a few main colors, especially the **@accent-color**. Try playing with the value to see what changes. The standard value is #070.
 ### Grid
-ToxLESS features a percentual grid. There are six different sizes and four different display sizes. The column sizes are *100, 75, 66, 50, 33 or 25%*. The disiplay sizes are *lg (>=1200px), md (>=992px), sm (>=768px)* and less (<768px).
+ToxLESS features a percentual grid. There are six different sizes and four different display sizes. The column sizes are *100, 75, 66, 50, 33 or 25%*. The display sizes are *lg (>=1200px), md (>=992px), sm (>=768px)* and less (<768px).
 
 Everything with a size below the class minimum gets turned into a 100% column. defaults to a 100% column. Examples:
 
 * col-100 (always 100%)
-* col-75-lg (75% on a display >=768px, else 100%)
-* col-50-md (50% on a display >=992px, else 100%)
-* col-60-sm (60% on a display <768px, else 100%).
+* col-lg-75 (75% on a display >=768px, else 100%)
+* col-md-50 (50% on a display >=992px, else 100%)
+* col-sm-66 (60% on a display <768px, else 100%).
 
-The highest display size counts. For example *class="col-75-lg col-66-md"*. This means the column is 75% if the display is >=1200px, if the display is between 1200px and 992px the screen will be 66% and otherwise it will default to 100% width.
+The highest display size counts. For example *class="col-lg-75 col-md-66"*. This means the column is 75% if the display is >=1200px, if the display is between 1200px and 992px the screen will be 66% and otherwise it will default to 100% width.
 
 ### Table
 For a simple but beautiful table use the *table-flat* class. See the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/index.html">index.html</a>** for an example.
@@ -31,4 +33,4 @@ You can build forms in two ways: either with the grid system or without it. The 
 The second example features inline form rows, but this isn't required. It just depends on how you use the grid system.
 
 ### Buttons
-There are three button sizes and 4 button types you can use. The sizes are: *button-lg*, *button-sm* and normal. The types are: *dark*, *light*, *inverted* and normal.
+There are three button sizes and 4 button types you can use. The sizes are: *button-lg*, *button-sm* and normal. The types are: *dark*, *light*, *inverted* and normal. See the **<a href="https://github.com/ToxSickProductions/ToxLESS/blob/master/index.html">index.html</a>** for an example.

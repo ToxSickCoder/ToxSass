@@ -1,12 +1,12 @@
 header {
-  z-index: 2;
   position: fixed;
-  display: block;
-  float: left;
-  height: 60px;
-  width: 100%;
+  z-index: 2;
   top: 0;
-  background-color: @header-footer-bg;
+  height: 60px;
+  display: block;
+  width: 100%;
+  float: left;
+  background: @header-footer-bg;
   border-bottom: 2px solid darken(@header-footer-bg, 10%);
   nav {
     height: 60px;
@@ -17,13 +17,13 @@ header {
       padding: 8px 15px;
       color: @font-color-light;
       font-size: 30px;
-      @media (max-width: 381px) {
+      @media (max-width: 421px) {
         padding: 0 8px;
       }
     }
     img.header-brand {
       padding: 0 15px;
-      @media (max-width: 381px) {
+      @media (max-width: 421px) {
         padding: 0 8px;
       }
     }
@@ -33,53 +33,53 @@ header {
       li {
         float: left;
         text-align: center;
-        &.active a {
+        &.active a,
+        &.active a:visited {
           background-color: darken(@accent-color, 5%);
-          color: darken(@font-color-light, 30%);
-          border-bottom: 2px solid darken(@accent-color, 12%);
+          border-bottom: 2px solid #040;
         }
         a {
           display: block;
-          padding: 18px;
-          border-bottom: 2px solid transparent;
           color: @font-color-light;
+          border-bottom: 2px solid transparent;
+          padding: 18px;
           font-weight: normal;
           &:visited {
             color: @font-color-light;
           }
           &:hover {
-            background-color: @accent-color;
+            background-color: #070;
+            border-bottom: 2px solid #050;
             color: @font-color-light;
-            border-bottom: 2px solid darken(@accent-color, 12%);
             text-decoration: none;
           }
         }
       }
     }
     button {
+      outline: none;
       display: none;
       float: right;
-      height: 60px;
-      width: 60px;
       background: none;
+      border: 0;
       color: white;
       font-size: 24px;
-      outline: none;
-      border: 0;
+      height: 60px;
+      width: 60px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: (@grid-width-sm - 1)) {
       div {
+        background-color: @header-footer-bg;
         display: block;
         position: relative;
         height: 60px;
         z-index: 2;
-        background-color: @header-footer-bg;
       }
       ul {
+        background: @header-footer-bg;
         position: relative;
-        background-color: @header-footer-bg;
-        width: 100%;
         z-index: 1;
+        width: 100%;
         border-bottom: 1px solid black;
         li {
           width: 100%;

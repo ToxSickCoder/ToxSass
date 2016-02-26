@@ -7,15 +7,16 @@
   @media (min-width: @grid-width-sm) {
     width: (@grid-width-sm - 18);
   }
-  @media (min-width: @grid-width-sm) {
-    width: (@grid-width-sm - 18);
+  @media (min-width: @grid-width-md) {
+    width: (@grid-width-md - 18);
   }
   @media (min-width: @grid-width-lg) {
     width: (@grid-width-lg - 30);
   }
 }
 
-[class*="col-"] {
+[class^="col-"],
+[class*=" col-"] {
   display: block;
   width: 100%;
   padding: 10px;
