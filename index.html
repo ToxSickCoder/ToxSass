@@ -10,18 +10,12 @@
   <title>ToxSass - A Sass framework</title>
 
   <link rel="stylesheet" type="text/css" href="css/toxsass.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
   <script>
-    var open = false; // keeps track if menu is open or closed
-
-    var toggleMenu = function() { // function for toggling the menu
-      var menu = document.getElementById('menu');
-      open = !open;
-      if (open) menu.className = 'open';
-      else menu.className = 'close';
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-      document.getElementById('menu').className = 'close'; // starts with a closed menu.
+    $(document).ready(function(){
+      $("#toggle").click(function(){
+        $('#menu').toggleClass("close").toggleClass("open");
+      })
     });
   </script>
 </head>
