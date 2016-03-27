@@ -6,8 +6,8 @@ header {
   display: block;
   width: 100%;
   float: left;
-  background: @header-footer-bg;
-  border-bottom: 2px solid darken(@header-footer-bg, 10%);
+  background: $header-footer-bg;
+  border-bottom: 2px solid darken($header-footer-bg, 10%);
   nav {
     height: 60px;
     .header-brand {
@@ -15,7 +15,7 @@ header {
       float: left;
       max-height: 60px;
       padding: 8px 15px;
-      color: @font-color-light;
+      color: $font-color-light;
       font-size: 30px;
       @media (max-width: 421px) {
         padding: 0 8px;
@@ -35,22 +35,22 @@ header {
         text-align: center;
         &.active a,
         &.active a:visited {
-          background-color: darken(@accent-color, 5%);
-          border-bottom: 2px solid darken(@accent-color, 15%);
+          background-color: darken($accent-color, 5%);
+          border-bottom: 2px solid darken($accent-color, 15%);
         }
         a {
           display: block;
-          color: @font-color-light;
+          color: $font-color-light;
           border-bottom: 2px solid transparent;
           padding: 18px;
           font-weight: normal;
           &:visited {
-            color: @font-color-light;
+            color: $font-color-light;
           }
           &:hover {
-            background-color: @accent-color;
-            border-bottom: 2px solid darken(@accent-color, 10%);
-            color: @font-color-light;
+            background-color: $accent-color;
+            border-bottom: 2px solid darken($accent-color, 10%);
+            color: $font-color-light;
             text-decoration: none;
           }
         }
@@ -67,16 +67,16 @@ header {
       height: 60px;
       width: 60px;
     }
-    @media (max-width: (@grid-width-sm - 1)) {
+    @media (max-width: ($grid-width-sm - 1)) {
       div {
-        background-color: @header-footer-bg;
+        background-color: $header-footer-bg;
         display: block;
         position: relative;
         height: 60px;
         z-index: 2;
       }
       ul {
-        background: @header-footer-bg;
+        background: $header-footer-bg;
         position: relative;
         z-index: 1;
         width: 100%;

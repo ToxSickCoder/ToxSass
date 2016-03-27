@@ -1,6 +1,6 @@
 body {
-  background-color: @background-color;
-  color: @font-color;
+  background-color: $background-color;
+  color: $font-color;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -24,6 +24,6 @@ body {
 }
 .jumbotron {
   border-bottom: 2px solid #111;
-  background-color: @jumbotron-bg;
-  color: @font-color-light;
+  background-color: $jumbotron-bg;
+  color: $font-color-light;
 }

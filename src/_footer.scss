@@ -3,11 +3,11 @@ footer {
   display: block;
   position: fixed;
   bottom: 0;
-  background: @header-footer-bg;
-  border-top: 1px solid darken(@header-footer-bg, 10%);
+  background: $header-footer-bg;
+  border-top: 1px solid darken($header-footer-bg, 10%);
   div {
     text-align: center;
-    color: @font-color-light;
+    color: $font-color-light;
     padding: 8px;
     height: 40px;
   }
@@ -20,7 +20,7 @@ footer {
   }
   a,
   a:visited {
-    color: @font-color-light;
+    color: $font-color-light;
   }
   p {
     font-size: 1em;
